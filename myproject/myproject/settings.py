@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-lm)su(8^1tt9d$gxg13=kvpc+r5n@kvh#rti3wq&7*^!-gla*p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+     "carlistings-backend-zlsq.onrender.com",
+    "localhost",  # for local dev
+    "127.0.0.1",  # for local dev
+]
 
 
 # Application definition
