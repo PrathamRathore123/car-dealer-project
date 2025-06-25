@@ -1,0 +1,67 @@
+{
+  "info": {
+    "name": "Car Listings API",
+    "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
+    "description": "Postman collection for testing the Car Listings Django API with custom token authentication.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Cars",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://carlistings-backend-zlsq.onrender.com/api/cars/",
+          "protocol": "https",
+          "host": [
+            "carlistings-backend-zlsq",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "cars",
+            ""
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create New Car",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer 12345abc",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"brand\": \"Toyota\",\n    \"model\": \"Camry\",\n    \"year\": 2019,\n    \"price\": 600000,\n    \"description\": \"Well maintained\"\n}"
+        },
+        "url": {
+          "raw": "https://carlistings-backend-zlsq.onrender.com/api/cars/",
+          "protocol": "https",
+          "host": [
+            "carlistings-backend-zlsq",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "cars",
+            ""
+          ]
+        }
+      }
+    }
+  ]
+}
